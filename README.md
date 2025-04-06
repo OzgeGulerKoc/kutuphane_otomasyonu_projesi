@@ -16,10 +16,11 @@ Bu sistemin kullanıcılara sunduğu temel faydalar şunlar olacaktır:
 
 # PROJEDE KULLANILAN TEKNOLOJİLER: 
 
-Microsoft Visual Studio Community 2022 (64-bit) Professional sürümünü bu linkten indirebilirsiniz.  https://visualstudio.microsoft.com/tr/downloads/
+Microsoft Visual Studio Community 2022 (64-bit) Professional sürümünü bu linkten indirebilirsiniz. 
+-> https://visualstudio.microsoft.com/tr/downloads/
 
 MySQL Workbench veri tabanı programını bu linkten indirebilirsiniz.
- https://dev.mysql.com/downloads/windows    
+-> https://dev.mysql.com/downloads/windows    
 
 
 # MYSQL VERİTABANININ OLUŞTURULMASI
