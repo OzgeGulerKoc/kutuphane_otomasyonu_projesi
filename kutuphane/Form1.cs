@@ -1,18 +1,16 @@
-using MySql.Data.MySqlClient;
-
-namespace WinFormsApp1
+namespace kutuphane
 {
-    public partial class formAnasayfa : Form
+    public partial class formAnaSayfa : Form
     {
-
-        public formAnasayfa()
+        public formAnaSayfa()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnKitap_Click(object sender, EventArgs e)
         {
-
+            formKitap kitap = new formKitap();
+            kitap.ShowDialog();
         }
 
         private void btnOgrenci_Click(object sender, EventArgs e)
@@ -23,14 +21,8 @@ namespace WinFormsApp1
 
         private void btnTur_Click(object sender, EventArgs e)
         {
-            formKitapTur kitapTur = new formKitapTur();
-            kitapTur.ShowDialog();
-        }
-
-        private void btnKitap_Click(object sender, EventArgs e)
-        {
-            formKitap kitap = new formKitap();
-            kitap.ShowDialog();
+            formKitapTur kitaptur = new formKitapTur();
+            kitaptur.ShowDialog();
         }
 
         private void btnOdunc_Click(object sender, EventArgs e)
@@ -38,6 +30,5 @@ namespace WinFormsApp1
             formOduncKitap oduncKitap = new formOduncKitap();
             oduncKitap.ShowDialog();
         }
-
     }
 }
