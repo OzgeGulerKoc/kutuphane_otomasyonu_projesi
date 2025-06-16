@@ -117,6 +117,8 @@
             Name = "formAnaSayfa";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Kütüphane Projesi";
+            FormClosing += formAnaSayfa_FormClosing;
+            Load += formAnaSayfa_Load;
             ResumeLayout(false);
         }
 

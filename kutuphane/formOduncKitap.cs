@@ -64,7 +64,6 @@ namespace kutuphane
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(komutsatiri, baglanti);
                 DataTable dataTable = new DataTable();
                 dataAdapter.Fill(dataTable);
-
                 gridOduncKitaplar.DataSource = dataTable;
 
                 gridOduncKitaplar.Columns["id"].HeaderText = "ID";
@@ -83,13 +82,11 @@ namespace kutuphane
                 gridOduncKitaplar.Columns["teslim_tarihi"].Width = 70;
                 gridOduncKitaplar.Columns["aciklama"].HeaderText = "Açıklama";
                 gridOduncKitaplar.Columns["aciklama"].Width = 150;
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Hata oluştu", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void btnKitapVer_Click(object sender, EventArgs e)
@@ -120,8 +117,6 @@ namespace kutuphane
             {
                 MessageBox.Show(ex.Message, "Hata oluştu", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
         public void Temizle()

@@ -30,5 +30,16 @@ namespace kutuphane
             formOduncKitap oduncKitap = new formOduncKitap();
             oduncKitap.ShowDialog();
         }
+
+        private void formAnaSayfa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formAnaSayfa_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }
