@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.42, for Win64 (x86_64)
 --
--- Host: localhost    Database: kutuphane
+-- Host: 127.0.0.1    Database: kutuphane
 -- ------------------------------------------------------
--- Server version	8.0.32
+-- Server version	8.0.42
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -67,6 +67,32 @@ LOCK TABLES `kitaplar` WRITE;
 /*!40000 ALTER TABLE `kitaplar` DISABLE KEYS */;
 INSERT INTO `kitaplar` VALUES (1,1,'Kuyucaklı Yusufa','Sabahattin Ali','Deneme',221),(2,1,'Suç ve Ceza','Dostoyevski','Deneme',687),(3,1,'Beyaz Gemi','Cengiz Aytmatov','Deneme',168),(4,1,'Sinekli Bakkal','Halide Edip Adıvar','Örnek',476),(5,1,'Çalıkuşu','Reşat Nuri Gültekin','Örnek',544),(6,1,'Sefiller','Victor Hugo','Örnek',520),(7,2,'Ömer Seyfettin Hikayelerinden Seçmeler','Ömer Seyfettin','Deneme',176),(8,1,'Küçük Ağa','Tarık Buğra','Deneme',477),(9,1,'Yaban','Yakup Kadri Karaosmanoğlu','Deneme',215),(10,1,'Ölü Canlar','Gogol','Örnek',484),(11,3,'Otuz Beş Yaş','Cahit Sıtkı Tarancı','Örnek',120),(12,3,'Safahat','Mehmet Akif Ersoy','Örnek',560),(13,3,'Çile','Necip Fazıl Kısakürek','Deneme',512),(14,3,'Bütün Şiirleri - Orhan Veli','Orhan Veli Kanık','Örnek',247),(15,4,'Anadolu Notları','Reşat Nuri Güntekin','Örnek',287),(16,4,'Seyahatname','Evliya Çelebi','Deneme',828),(17,1,'aaaa','bbbb','cccc',123);
 /*!40000 ALTER TABLE `kitaplar` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `kullanicilar`
+--
+
+DROP TABLE IF EXISTS `kullanicilar`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `kullanicilar` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `kullanici_adi` varchar(50) NOT NULL,
+  `sifre` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `kullanici_adi_UNIQUE` (`kullanici_adi`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `kullanicilar`
+--
+
+LOCK TABLES `kullanicilar` WRITE;
+/*!40000 ALTER TABLE `kullanicilar` DISABLE KEYS */;
+INSERT INTO `kullanicilar` VALUES (1,'admin','123'),(2,'1','1');
+/*!40000 ALTER TABLE `kullanicilar` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -138,4 +164,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-05  8:24:16
+-- Dump completed on 2025-06-16 22:28:02
